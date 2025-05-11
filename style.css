@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    background: #ffd19c;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .gift-box {
+    font-size: 5rem;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+  }
+  
+  .gift-box:hover {
+    transform: scale(1.1);
+  }
+  
+  .surprise {
+    display: none;
+    animation: fadeIn 2s ease forwards;
+  }
+  
+  .flowers {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: float 3s infinite ease-in-out;
+  }
+  
+  .paw-trail {
+    font-size: 2rem;
+    animation: pawSteps 5s linear infinite;
+    margin-bottom: 1rem;
+  }
+  
+  .message {
+    background: #ad8c78;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  @keyframes pawSteps {
+    0% { opacity: 0; transform: translateX(-100px); }
+    100% { opacity: 1; transform: translateX(100px); }
+  }
+  
